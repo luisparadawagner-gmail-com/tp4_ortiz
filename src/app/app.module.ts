@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormularioVideojuegoComponent } from './componentes/formulario-videojuego/formulario-videojuego.component';
 import { CentralVideojuegoComponent } from './componentes/central-videojuego/central-videojuego.component';
 import { TablaVideojuegoComponent } from './componentes/tabla-videojuego/tabla-videojuego.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TablaVideojuegoComponent } from './componentes/tabla-videojuego/tabla-v
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
