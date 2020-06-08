@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tp4-ortiz"
+    }
+  },
+  "defaultProject": "tp4-ortiz",
+  "cli": {
+    "analytics": false
+  }
 }
