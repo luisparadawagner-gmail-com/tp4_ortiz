@@ -8,19 +8,31 @@ import { CentralVideojuegoComponent } from './componentes/central-videojuego/cen
 import { TablaVideojuegoComponent } from './componentes/tabla-videojuego/tabla-videojuego.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule } from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
     FormularioVideojuegoComponent,
     CentralVideojuegoComponent,
-    TablaVideojuegoComponent
+    TablaVideojuegoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatMenuModule,
+    MatTableModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

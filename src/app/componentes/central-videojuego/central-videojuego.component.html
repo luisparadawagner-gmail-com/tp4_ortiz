@@ -1,1 +1,41 @@
-<p>central-videojuego works!</p>
+<form [formGroup]="juegoForm" (ngSubmit)="submit()">
+  <h1>Formulario Central de Videojuegos</h1>
+
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      formControlName="nombre"
+      placeholder="Nombre"
+    /> </mat-form-field
+  >&nbsp;
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      formControlName="plataforma"
+      placeholder="Plataforma"
+    /> </mat-form-field
+  >&nbsp;
+  <br />
+  <mat-form-field>
+    <input
+      type="number"
+      matInput
+      formControlName="version"
+      placeholder="Version"
+    /> </mat-form-field
+  >&nbsp;
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      formControlName="genero"
+      placeholder="Genero"
+    /> </mat-form-field
+  >&nbsp;
+  <br />
+  <button mat-stroked-button color="accent">
+    Guardar
+  </button>
+</form>

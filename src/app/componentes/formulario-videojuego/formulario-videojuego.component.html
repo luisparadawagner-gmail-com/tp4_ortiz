@@ -1,1 +1,51 @@
-<p>formulario-videojuego works!</p>
+<div *ngIf="showJuego">
+  <h1>Formulario de Videojuego</h1>
+  <form [formGroup]="juegoForm" (ngSubmit)="submit()">
+    <div class="juegoDatos">
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          formControlName="nombre"
+          placeholder="Nombre Videojuego"
+        /> </mat-form-field
+      >&nbsp;
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          formControlName="plataforma"
+          placeholder="Plataforma"
+        /> </mat-form-field
+      >&nbsp;
+
+      <br />
+      <h2>Especificaciones</h2>
+      <mat-form-field>
+        <input
+          type="number"
+          matInput
+          formControlName="version"
+          placeholder="Version"
+        /> </mat-form-field
+      >&nbsp;
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          formControlName="genero"
+          placeholder="Genero"
+        /> </mat-form-field
+      >&nbsp;
+    </div>
+    <br />
+    <button mat-stroked-button color="accent">
+      Guardar
+    </button>
+  </form>
+  <br />
+</div>
+
+<div *ngIf="showJuegoCentral">
+  <app-central-videojuego [juegoC]="videojuego"></app-central-videojuego>
+</div>
